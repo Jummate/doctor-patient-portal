@@ -1,4 +1,6 @@
 import { FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Menu = ({ onClick }) => {
   return (
@@ -38,18 +40,21 @@ const Menu = ({ onClick }) => {
       </div> */}
 
       <div className="flex flex-col gap-7 font-bold">
-        <a
-          href=""
+        <Link
+          to="/"
+          onClick={onClick}
           className="transition ease-in duration-500 hover:scale-125"
         >
           Home
-        </a>
-        <a
-          href=""
+        </Link>
+        <HashLink
+          smooth
+          to="/#about"
+          onClick={onClick}
           className="transition ease-in duration-500 hover:scale-125"
         >
           About
-        </a>
+        </HashLink>
         <a
           href=""
           className="transition ease-in duration-500 hover:scale-125"

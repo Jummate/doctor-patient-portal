@@ -2,7 +2,8 @@ import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import Button from "../button/Button";
 import Menu from "../menu/Menu";
-import { HashLink as Link } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -22,12 +23,12 @@ const Header = () => {
               <Link to="/">Home</Link>
             </li>
             <li className="hover:text-cyan-500 hover:bg-cyan-600/5 cursor-pointer">
-              <Link
+              <HashLink
                 smooth
                 to="/#about"
               >
                 About
-              </Link>
+              </HashLink>
             </li>
             <li className="hover:text-cyan-500 hover:bg-cyan-600/5 cursor-pointer">
               <a href="">Contact</a>
