@@ -61,12 +61,12 @@ const Menu = ({ onClick }) => {
         >
           Contact
         </a>
-        <a
-          href=""
+        <Link
+          to="login"
           className="transition ease-in duration-500 hover:scale-125"
         >
           Log In
-        </a>
+        </Link>
       </div>
     </nav>
   );

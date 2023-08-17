@@ -3,13 +3,13 @@ import viteLogo from "/vite.svg";
 import Home from "./pages/home/Home";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
-import About from "./pages/about/About";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   Outlet,
 } from "react-router-dom";
+import LogIn from "./pages/login/LogIn";
 // import "./App.css";
 
 function App() {
@@ -30,8 +30,13 @@ function App() {
           element={<Layout />}
         >
           <Route
-            path="/"
+            index
             element={<Home />}
+          />
+
+          <Route
+            path="login"
+            element={<LogIn />}
           />
         </Route>
       </Routes>
