@@ -67,6 +67,13 @@ const Menu = ({ onClick }) => {
         >
           Log In
         </Link>
+
+        <Link
+          to="register"
+          className="transition ease-in duration-500 hover:scale-125"
+        >
+          Register
+        </Link>
       </div>
     </nav>
   );

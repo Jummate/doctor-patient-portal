@@ -3,6 +3,7 @@ import viteLogo from "/vite.svg";
 import Home from "./pages/home/Home";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
+import Register from "./pages/register/Register";
 import {
   BrowserRouter as Router,
   Routes,
@@ -37,6 +38,10 @@ function App() {
           <Route
             path="login"
             element={<LogIn />}
+          />
+          <Route
+            path="register"
+            element={<Register />}
           />
         </Route>
       </Routes>
