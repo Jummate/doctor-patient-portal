@@ -9,7 +9,7 @@ const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
-    <header className="p-5 text-white fixed z-10 w-full">
+    <header className="p-5 bg-cyan-900 text-white fixed z-10 w-full">
       <nav className="flex justify-between items-center">
         <h1>User</h1>
         <FaBars
